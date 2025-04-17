@@ -24,6 +24,7 @@ export class CanvasObjects {
   get lastElementGI() { return ('.wrapper-0-2-88 .section-0-2-90:last-child span') }
   get lastElementGR() { return ('.rulesContent-0-2-45.rulesContent-d4-0-2-52 > div > ul:nth-child(9) > li:nth-child(3)') }  
   get juicyLogoGI() { return ('[src^="resources/paytabe"]') }
+  get gameRulesSection() { return ('div.rulesContent-0-2-45.rulesContent-d4-0-2-52 > div > ul:nth-child(5) > li:nth-child(2)') }
   
 }
 export const canvasObjects = new CanvasObjects()
