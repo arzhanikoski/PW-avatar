@@ -27,6 +27,7 @@ export class PopUpPage {
   }
 
   async compareScreenshots(screenshotName) {
+    await this.page.waitForTimeout(1000);
     const nameoFCanvas = await this.canvas.screenshot();
     expect(nameoFCanvas).toMatchSnapshot(screenshotName, { threshold: 0.3 });
   }
