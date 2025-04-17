@@ -26,6 +26,16 @@ This project utilizes [Playwright](https://playwright.dev/) to perform end-to-en
 
 ## 🚀 Running Tests
 
+- **Run tests with HTML report:**
+
+    npx playwright test --reporter html
+
+- **View the test report:**
+
+    npx playwright show-report
+
+    Use the above commands to start running your test suite and review the results in an interactive HTML format.
+
 - **Run All Tests:**
 
   ```bash
@@ -107,4 +117,21 @@ PW-avatar/
 - [Running and Debugging Tests](https://playwright.dev/docs/running-tests)
 
 
-## 
+## 🌐 Language-based Section Validation
+
+A test.data.js file is used to validate game sections dynamically based on the language provided via the .env configuration.
+
+Example structure in test.data.js:
+
+export const gameData = {
+  en: {
+    gameInfo: 'GAME INFO',
+    payTable: 'PAYTABLE'
+  },
+  fr: {
+    gameInfo: 'INFOS JEU',
+    payTable: 'TABLEAU DES GAINS'
+  }
+};
+
+Your tests dynamically pick expected labels from this file depending on the LANGUAGE env variable.
