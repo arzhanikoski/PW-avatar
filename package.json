@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "npx playwright test --grep --reporter html",
+    "test": "npx playwright test --reporter html",
     "test:update": "npx playwright test --update-snapshots",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write ."

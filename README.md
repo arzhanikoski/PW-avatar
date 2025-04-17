@@ -28,7 +28,9 @@ This project utilizes [Playwright](https://playwright.dev/) to perform end-to-en
 
 - **Run tests with HTML report:**
 
+    npm run test or 
     npx playwright test --reporter html
+    
 
 - **View the test report:**
 
