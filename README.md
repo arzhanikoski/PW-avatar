@@ -97,6 +97,8 @@ expect(screenshot).toMatchSnapshot('gameInfo.png', { threshold: 0.15 });
 
 ```bash
 PW-avatar/
+├── data/
+│   └── test_data.js            # Stored test data that is used for validation or input in the tests
 ├── objects/
 │   └── canvas.objects.js       # Selectors and constants
 ├── pages/
