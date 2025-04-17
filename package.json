@@ -1,0 +1,23 @@
+{
+  "name": "playwright-canvas-automation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test --grep --reporter html",
+    "test:update": "npx playwright test --update-snapshots",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "playwright": "^1.51.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
